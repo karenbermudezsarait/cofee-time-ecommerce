@@ -1,0 +1,682 @@
+:root {
+  --marron: rgba(136, 58, 28, 0.747);
+  --icons-color: #000;
+}
+
+/**
+  Header home
+**/
+/* header {
+  display: flex;
+  flex-direction: column;
+}
+
+header.home {
+  height: 100vh;
+}
+
+header:not(.home) nav.navbar {
+  background-color: var(--marron);
+}
+
+nav {
+  z-index: 3;
+  width: 100%;
+}
+
+nav a {
+  color: white;
+}
+
+.navbar-brand {
+  color: #fff;
+} */
+
+body {
+  background-color: #fff5f5;
+  overflow-x: hidden;
+}
+
+header.masthead {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: linear-gradient(
+      to bottom,
+      rgba(92, 77, 66, 0.8) 0%,
+      rgba(92, 77, 66, 0.8) 100%
+    ),
+    url("../img/portada/coffee-2358392_1280.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+header.masthead h1,
+header.masthead .h1 {
+  font-size: 2.25rem;
+}
+
+@media (min-width: 992px) {
+  header.masthead {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+  }
+
+  header.masthead p {
+    font-size: 1.15rem;
+  }
+
+  header.masthead h1,
+  header.masthead .h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  header.masthead h1,
+  header.masthead .h1 {
+    font-size: 3.5rem;
+  }
+}
+
+header.mastheadproductos {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: linear-gradient(
+      to bottom,
+      rgba(92, 77, 66, 0.8) 0%,
+      rgba(92, 77, 66, 0.8) 100%
+    ),
+    url("../img/portada/portada-interna.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+header.masthead h1,
+header.masthead .h1 {
+  font-size: 2.25rem;
+}
+
+@media (min-width: 992px) {
+  header.masthead {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+  }
+
+  header.masthead p {
+    font-size: 1.15rem;
+  }
+
+  header.masthead h1,
+  header.masthead .h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  header.masthead h1,
+  header.masthead .h1 {
+    font-size: 3.5rem;
+  }
+}
+
+.blackout {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 2;
+  background: #0000009c;
+  min-height: 100vh;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgb(0 0 0 / 47%) 8%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.navbar-brand img {
+  height: 56px; /* Ajusta el tamaño del logo */
+}
+
+#mainNav {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  transition: background-color 0.2s ease;
+}
+
+#mainNav .navbar-brand {
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  color: #212529;
+  padding: 0 !important;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+  color: #6c757d;
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.75rem 0;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link:hover,
+#mainNav .navbar-nav .nav-item .nav-link:active {
+  color: #ce8b5c;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active {
+  color: #ce8b5c !important;
+}
+
+@media (min-width: 992px) {
+
+  .navbar-brand:not(.white){
+    display: none;
+  }
+  
+  #mainNav.navbar-shrink .navbar-brand:not(.white){
+    display: block;
+  }
+  
+  #mainNav.navbar-shrink .white{
+    display: none;
+  }
+
+  #mainNav {
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  #mainNav .navbar-brand {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  #mainNav .navbar-brand:hover {
+    color: #fff;
+  }
+
+  #mainNav .navbar-nav .nav-item .nav-link {
+    color: rgba(255, 255, 255, 0.7);
+    padding: 0 1rem;
+  }
+
+  #mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: #fff;
+  }
+
+  #mainNav .navbar-nav .nav-item:last-child .nav-link {
+    padding-right: 0;
+  }
+
+  #mainNav.navbar-shrink {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+  }
+
+  #mainNav.navbar-shrink .navbar-brand {
+    color: #212529;
+  }
+
+  #mainNav.navbar-shrink .navbar-brand:hover {
+    color: #f4623a;
+  }
+
+  #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link {
+    color: #212529;
+  }
+
+  #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover {
+    color: #f4623a;
+  }
+}
+
+.banner {
+  background: url(../) no-repeat center;
+  background-size: cover;
+  min-height: 100vh;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+}
+
+.bannercontacto {
+  background: url(../img/historia.jpg) no-repeat center;
+  background-size: cover;
+  min-height: 100vh;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+}
+
+.bannersobre-nosotros {
+  background: url(../img/historia.jpg) no-repeat center;
+  background-size: cover;
+  min-height: 100vh;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link,
+.navbar-nav .nav-link.show {
+  color: #fff;
+  font-family: "Raleway";
+}
+
+/*** fin header ***/
+.card-product-item img {
+  width: 100%;
+  max-height: 204px;
+}
+
+.floating-wpp.float-end {
+  z-index: 4;
+}
+
+.carousel-item {
+  max-height: 400px;
+}
+
+.card-text {
+  font-family: "Raleway";
+  font-size: 18px;
+  font-weight: bold;
+}
+.card-body {
+  font-family: "Raleway";
+ 
+}
+
+/**
+ 1rem = 16px
+**/
+.gtco-testimonials .card-text {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.gtco-testimonials h3 {
+  font-size: 22px;
+}
+
+
+h1,
+.navbar-brand {
+  font-family: "Pacifico";
+}
+
+.h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-family: "Pacifico";
+  color: #421908;
+  font-size: 40px;
+}
+
+.p {
+  font-family: "Raleway";
+}
+
+.text-white-75 {
+  color: #000;
+  font-size: 20px;
+}
+
+.text-white-75 .gtco-testimonials {
+  position: relative;
+  margin-top: 30px;
+
+  .h2 {
+    font-size: 30px;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 50px;
+  }
+
+  .owl-stage-outer {
+    padding: 30px 0;
+  }
+
+  .owl-nav {
+    display: none;
+  }
+
+  .owl-dots {
+    text-align: center;
+
+    .span {
+      position: relative;
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      display: block;
+      background: #fff;
+      border: 2px solid #01b0f8;
+      margin: 0 5px;
+    }
+
+    .active {
+      box-shadow: none;
+
+      .span {
+        background: #01b0f8;
+        box-shadow: none;
+        height: 12px;
+        width: 12px;
+        margin-bottom: -1px;
+      }
+    }
+  }
+
+  .card {
+    background: #fff;
+    box-shadow: 0 8px 30px -7px #c9dff0;
+    margin: 0 20px;
+    padding: 0 10px;
+    border-radius: 20px;
+    border: 0;
+
+    .card-img-top {
+      max-width: 100px;
+      border-radius: 50%;
+      margin: 15px auto 0;
+      box-shadow: 0 8px 20px -4px #95abbb;
+      width: 100px;
+      height: 100px;
+    }
+
+    .h3 {
+      color: #01b0f8;
+      font-size: 21px;
+      line-height: 1.3;
+
+      .span {
+        font-size: 18px;
+        color: #666666;
+      }
+    }
+
+    .p {
+      font-size: 18px;
+      color: #555;
+      padding-bottom: 15px;
+    }
+  }
+
+  .active {
+    opacity: 0.5;
+    transition: all 0.3s;
+  }
+
+  .center {
+    opacity: 1;
+
+    .h5 {
+      font-size: 24px;
+
+      span {
+        font-size: 20px;
+      }
+    }
+
+    .card-img-top {
+      max-width: 100%;
+      height: 120px;
+      width: 120px;
+    }
+  }
+}
+
+.feature-icon {
+  font-size: 2rem;
+  color: var(--icons-color);
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.feature-item p {
+  margin-left: 1rem;
+  margin-bottom: 0px;
+  flex: 1;
+  font-size: 1rem;
+}
+
+.btn-dark {
+  background-color: var(--marron);
+  border-color: var(--marron);
+}
+
+/* .sc-added-item:before {
+  right: 24px;
+}
+
+.sc-added-item:after {
+  right: 24px;
+} */
+
+span.sc-cart-count.badge {
+  color: #000;
+}
+
+.product_name {
+  font-size: 1.2rem;
+}
+
+.sc-cart-empty-msg {
+  text-align: left;
+}
+
+.product_description {
+  font-size: 0.9rem;
+}
+
+.contact-map {
+  height: 400px;
+  overflow: hidden;
+}
+
+.btn-primary {
+  background-color: #a85d30;
+  border-color: #a85d30;
+}
+
+.btn-primary:hover {
+  background-color: #ce7f4f;
+  border-color: #ce7f4f;
+}
+
+@media (max-width: 767px) {
+  .gtco-testimonials {
+    margin-top: 20px;
+  }
+}
+
+.owl-carousel .owl-nav button .owl-next,
+.owl-carousel .owl-nav button .owl-prev {
+  outline: 0;
+}
+
+button.owl-dot {
+  outline: 0;
+}
+
+.text-section h2 {
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.text-section p {
+  margin-bottom: 20px;
+}
+
+.text-bot {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.text-section img {
+  border-radius: 10px;
+}
+
+.text-section ul {
+  padding-left: 20px;
+}
+
+.text-section ul li {
+  list-style-type: disc;
+  margin-bottom: 10px;
+}
+
+#portfolio .container-fluid,
+#portfolio .container-sm,
+#portfolio .container-md,
+#portfolio .container-lg,
+#portfolio .container-xl,
+#portfolio .container-xxl {
+  max-width: 1920px;
+}
+
+#portfolio .container-fluid .portfolio-box,
+#portfolio .container-sm .portfolio-box,
+#portfolio .container-md .portfolio-box,
+#portfolio .container-lg .portfolio-box,
+#portfolio .container-xl .portfolio-box,
+#portfolio .container-xxl .portfolio-box {
+  position: relative;
+  display: block;
+}
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption,
+#portfolio .container-sm .portfolio-box .portfolio-box-caption,
+#portfolio .container-md .portfolio-box .portfolio-box-caption,
+#portfolio .container-lg .portfolio-box .portfolio-box-caption,
+#portfolio .container-xl .portfolio-box .portfolio-box-caption,
+#portfolio .container-xxl .portfolio-box .portfolio-box-caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+  background: rgba(131, 37, 10, 0.9);
+  transition: opacity 0.25s ease;
+  text-align: center;
+}
+
+#portfolio
+  .container-fluid
+  .portfolio-box
+  .portfolio-box-caption
+  .project-category,
+#portfolio
+  .container-sm
+  .portfolio-box
+  .portfolio-box-caption
+  .project-category,
+#portfolio
+  .container-md
+  .portfolio-box
+  .portfolio-box-caption
+  .project-category,
+#portfolio
+  .container-lg
+  .portfolio-box
+  .portfolio-box-caption
+  .project-category,
+#portfolio
+  .container-xl
+  .portfolio-box
+  .portfolio-box-caption
+  .project-category,
+#portfolio
+  .container-xxl
+  .portfolio-box
+  .portfolio-box-caption
+  .project-category {
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name,
+#portfolio .container-sm .portfolio-box .portfolio-box-caption .project-name,
+#portfolio .container-md .portfolio-box .portfolio-box-caption .project-name,
+#portfolio .container-lg .portfolio-box .portfolio-box-caption .project-name,
+#portfolio .container-xl .portfolio-box .portfolio-box-caption .project-name,
+#portfolio .container-xxl .portfolio-box .portfolio-box-caption .project-name {
+  font-size: 1.2rem;
+}
+
+#portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption,
+#portfolio .container-sm .portfolio-box:hover .portfolio-box-caption,
+#portfolio .container-md .portfolio-box:hover .portfolio-box-caption,
+#portfolio .container-lg .portfolio-box:hover .portfolio-box-caption,
+#portfolio .container-xl .portfolio-box:hover .portfolio-box-caption,
+#portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
+  opacity: 1;
+}
+
+.map-responsive {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.map-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .header p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .feature-item p {
+    margin-left: 0.5rem;
+    font-size: 0.9rem;
+  }
+}

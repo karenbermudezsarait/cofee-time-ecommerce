@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karen Bermudez y Micaela Cesari 1.2A 2024 </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <link rel="icon" type="image/x-icon" href="img/logo/logo-sm.png" />
+  <!-- Carga de los estilos css -->
+  <link rel="stylesheet" href="vendors/bootstrap/bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="vendors/Floating-WhatsApp-Message-Button-jQuery/floating-wpp.min.css" />
+  <link rel="stylesheet" href="vendors/owl-carousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="vendors/owl-carousel/assets/owl.theme.default.css">
+  <link rel="stylesheet" href="vendors/jquery-smartcart-master/jquery-smartcart-master/dist/css/smart_cart.min.css">
+  <link rel="stylesheet" href="vendors/simpleLightbox/simpleLightbox.min.css">
+  <link rel="stylesheet" href="css/estilos.css" />
+
+  <!-- Cargamos JQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container px-4 px-lg-5">
+      <a class="navbar-brand" href="/index.html"> <img
+          src="img/logo/logo-sm.png" alt="Coffe Time"
+          >
+      </a>
+      <a class="navbar-brand white" href="/index.html"> <img
+        src="img/logo/logo-sm-white.png" alt="Coffe Time"
+        >
+    </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="masthead">
+    <div class="container px-4 px-lg-5 h-100">
+      <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+        <div class="col-lg-8 align-self-end">
+          <h1 class="text-white font-weight-bold">Coffee Time es la Mejor Opción</h1>
+          <hr class="divider">
+        </div>
+        <div class="col-lg-8 align-self-baseline">
+
+          <p class="text-white mb-5">No te pierdas ninguna de nuestras ofertas,mira todos nuestros productos</p>
+
+          <a class="btn btn-primary btn-xl rounded-pill px-4" href="productos.html">Ver Productos</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="container my-5">
+    <div class="row align-items-center">
+      <div class="col-md-8">
+        <h2>Disfrutá nuestros cafés del mundo en tu casa</h2>
+        <p class="p">¡Conocé todos nuestros productos!</p>
+        <div class="feature-item">
+          <i class="fas fa-coffee feature-icon"></i>
+          <p class="p">
+            <strong>Cafe 100% natural</strong><br>
+            Disfrutá de un café puro y auténtico, cultivado sin químicos y seleccionado a mano.
+          </p>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-truck feature-icon"></i>
+          <p class="p">
+            <strong>Sin costo de envio</strong><br>
+            Experimenta un sabor excepcional con granos tostados artesanalmente para resaltar sus mejores notas.
+          </p>
+        </div>
+
+        <div class="feature-item">
+          <i class="fas fa-certificate feature-icon"></i>
+          <p class="p">
+            <strong>Productos de Alta calidad</strong><br>
+            Recibe tu café de alta calidad sin costo adicional, directamente en tu puerta.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <img src="img/portada/taza-cafe-foto-principal.png" alt="Ilustración de café" class="img-fluid" />
+      </div>
+  </section>
+
+  <section>
+    <h2 class="d-flex justify-content-center">Los más elegidos</h2>
+    <section class="py-5">
+      <div class="container px-4 px-lg-5 mt-5">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="row gx-4 justify-content-center" id="productos-home"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </section>
+
+  <!-- Galeria de fotos-->
+  <section>
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-lg-8 col-xl-6 text-center">
+        <h2 class=" mt-0">Galeria de Fotos</h2>
+        <hr class="divider" />
+        <p class="text-muted mb-5">Descubre la pasión en cada grano con nuestra galería de fotos de café.</p>
+      </div>
+    </div>
+
+    <div id="portfolio">
+      <div class="container-fluid p-0">
+        <div class="row g-0">
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/cafe-taza1.jpg">
+              <img class="img-fluid" src="img/portfolio/fullsize/cafe-taza1.jpg" alt="cafe en taza" />
+              <div class="portfolio-box-caption">
+                <div class="project-category text-white-50">café</div>
+                <div class="project-name">Granos de café</div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/fotodecafe2.jpg">
+              <img class="img-fluid" src="img/portfolio/fullsize/fotodecafe2.jpg" alt="cafe en granos" />
+              <div class="portfolio-box-caption">
+                <div class="project-category text-white-50">café</div>
+                <div class="project-name">Empacando café</div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/balsas-de-cafe3.jpg">
+              <img class="img-fluid" src="img/portfolio/fullsize/balsas-de-cafe3.jpg" alt="bolsas de cafe" />
+              <div class="portfolio-box-caption">
+                <div class="project-category text-white-50">café</div>
+                <div class="project-name">Bolsitas de café</div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/cafes-chica4.jpg">
+              <img class="img-fluid" src="img/portfolio/fullsize/cafes-chica4.jpg" alt="cafeteria" />
+              <div class="portfolio-box-caption">
+                <div class="project-category text-white-50">café</div>
+                <div class="project-name">Enviando café fresco</div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/cafe-americano5.jpg">
+              <img class="img-fluid" src="img/portfolio/fullsize/cafe-americano5.jpg" alt="cafe americano" />
+              <div class="portfolio-box-caption">
+                <div class="project-category text-white-50">café</div>
+                <div class="project-name">Café americano</div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/taza-latte6.jpg">
+              <img class="img-fluid" src="img/portfolio/fullsize/taza-latte6.jpg" alt="taza de cafe latte" />
+              <div class="portfolio-box-caption p-3">
+                <div class="project-category text-white-50">café</div>
+                <div class="project-name">Café latte</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonios -->
+  <div class="container mt-5 py-5">
+    <div class="gtco-testimonials text-center">
+      <h2>Testimonios</h2>
+      <div class="owl-carousel owl-carousel1 owl-theme pt-4">
+        <div>
+          <div class="card h-100 text-center"><img class="card-img-top"
+              src="img/testimonios/jazmingonzalez1.jpg" alt="mujer tomando cafe">
+            <div class="card-body">
+              <h3>Jazmin Gonzalez</h3>
+              <p class="card-text">"¡Amo este lugar! El café es delicioso y el ambiente es perfecto para trabajar o
+                relajarse."</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card h-100 text-center"><img class="card-img-top"
+              src="img/testimonios/marialopez-2.jpg" alt="mujer tomando cafe">
+            <div class="card-body">
+              <h3>Maria Lopez
+
+              </h3>
+              <p class="card-text">"El mejor café de la ciudad, sin duda. Y las pastelerías son simplemente
+                irresistibles." </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card h-100 text-center"><img class="card-img-top"
+              src="img/testimonios/ernestoperez-3.jpg" alt="hombre tomando cafe">
+            <div class="card-body">
+              <h3>Ernesto Perez<br />
+
+              </h3>
+              <p class="card-text">"Siempre encuentro nuevas opciones ricas y saludables en el menú que me sorprenden." </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card h-100 text-center"><img class="card-img-top"
+              src="img/testimonios/nicolasdominguez-4.jpg" alt="hombre tomando cafe">
+            <div class="card-body">
+              <h3>Nicolas Dominguez</h3>
+              <p class="card-text">"
+                Un lugar acogedor con excelente café, perfecto para reuniones.
+    "</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Submit Button-->
+
+  </div>
+  </form>
+  </div>
+  </div>
+  <div class="row gx-4 gx-lg-5 justify-content-center">
+    <div class="col-lg-4 text-center mb-5 mb-lg-0">
+      <i class="bi-phone fs-2 mb-3 text-muted"></i>
+    </div>
+  </div>
+  </div>
+  </section>
+
+  <footer class="footer py-4 btn-dark text-white">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-4 text-lg-start mb-2 mb-lg-0">
+          Karen Bermudez y Micaela Cesari 1.2A 2024
+        </div>
+        <div class="col-lg-4 text-center text-lg-end">
+          <a class="btn btn-dark btn-social mx-2" href="https://twitter.com" aria-label="Twitter"><i
+              class="fab fa-twitter"></i></a>
+          <a class="btn btn-dark btn-social mx-2" href="https://facebook.com" aria-label="Facebook"><i
+              class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-dark btn-social mx-2" href="https://linkedin.com" aria-label="LinkedIn"><i
+              class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="floating-wpp float-end"></div>
+  <!--- Zona de Carga de Scripts de JavaScripts -->
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+  <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+  <script src="vendors/bootstrap/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+  <script type="text/javascript" src="vendors/Floating-WhatsApp-Message-Button-jQuery/floating-wpp.min.js"></script>
+  <script type="text/javascript"
+    src="vendors/jquery-smartcart-master/jquery-smartcart-master/dist/js/jquery.smartCart.min.js"></script>
+    <script src="vendors/simpleLightbox/simpleLightbox.min.js"></script>
+  <script src="js/productos.js"></script>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
